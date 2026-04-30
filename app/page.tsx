@@ -47,4 +47,49 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CONTACT FORM */}
+      {/* CONTACT FORM */}<section id="contact" className="bg-gray-100 py-20 text-center">
+  <h2 className="font-bold text-3xl">
+    Get a Free Quote
+  </h2>
+
+  <form
+    className="flex flex-col gap-4 mx-auto mt-8 max-w-md"
+    onSubmit={async (e) => {
+      e.preventDefault();
+
+      const formData = new FormData(e.currentTarget);
+      const data = Object.fromEntries(formData);
+
+      await fetch("/api/leads", {
+        method: "POST",
+        body: JSON.stringify(data),
+      });
+
+      alert("Request submitted!");
+    }}
+  >
+    <input
+      name="name"
+      placeholder="Your Name"
+      required
+      className="p-3 border rounded"
+    />
+
+    <input
+      name="phone"
+      placeholder="Phone Number"
+      required
+      className="p-3 border rounded"
+    />
+
+    <select name="service" className="p-3 border rounded">
+      <option>HVAC Repair</option>
+      <option>Installation</option>
+      <option>Maintenance</option>
+    </select>
+
+    <button type="submit" className="bg-blue-600 p-3 rounded text-white">
+      Submit Request
+    </button>
+  </form>
+</section>
