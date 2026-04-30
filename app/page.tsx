@@ -13,17 +13,11 @@ export default function Home() {
         </p>
 
         <div className="flex justify-center gap-4 mt-6">
-          <a
-            href="tel:6145887215"
-            className="px-6 py-3 border rounded-lg"
-          >
+          <a href="tel:6145887215" className="px-6 py-3 border rounded-lg">
             Call Now
           </a>
 
-          <a
-            href="#contact"
-            className="px-6 py-3 border rounded-lg"
-          >
+          <a href="#" className="px-6 py-3 border rounded-lg">
             Get Quote
           </a>
         </div>
@@ -67,3 +61,23 @@ export default function Home() {
       </section>
 
       {/* CTA */}
+      <section className="bg-blue-600 py-20 text-white text-center">
+        <h2 className="font-bold text-3xl">
+          Need HVAC Service in Michigan Now?
+        </h2>
+
+        <p className="mt-4">
+          Call us anytime for fast service.
+        </p>
+
+        <div className="mt-6">
+          <a href="tel:6145887215" className="bg-white px-6 py-3 border rounded-lg text-black">
+            Call 614-588-7215
+          </a>
+        </div>
+      </section>
+
+    </main>
+  );
+}
+``
