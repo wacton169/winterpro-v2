@@ -13,11 +13,17 @@ export default function Home() {
         </p>
 
         <div className="flex justify-center gap-4 mt-6">
-          <a href="tel:6145887215" className="px-6 py-3 border rounded-lg">
+          <a
+            href="tel:6145887215"
+            className="px-6 py-3 border rounded-lg"
+          >
             Call Now
           </a>
 
-          <a href="#contact" className="px-6 py-3 border rounded-lg">
+          <a
+            href="#contact"
+            className="px-6 py-3 border rounded-lg"
+          >
             Get Quote
           </a>
         </div>
@@ -49,3 +55,15 @@ export default function Home() {
 
       {/* TRUST */}
       <section className="bg-gray-50 py-16 text-center">
+        <h2 className="font-bold text-2xl">
+          Why Choose Winter Pro HVAC?
+        </h2>
+
+        <div className="flex md:flex-row flex-col justify-center gap-6 mt-6">
+          <div>✅ Licensed & Insured</div>
+          <div>✅ 24/7 Emergency Service</div>
+          <div>✅ Fast Response Times</div>
+        </div>
+      </section>
+
+      {/* CTA */}
