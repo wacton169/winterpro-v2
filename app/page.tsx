@@ -47,7 +47,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CONTACT FORM */}<section id="contact" className="bg-gray-100 py-20 text-center">
+      {/* CONTACT FORM */}
+      <section id="contact" className="bg-gray-100 py-20 text-center">
   <h2 className="font-bold text-3xl">
     Get a Free Quote
   </h2>
