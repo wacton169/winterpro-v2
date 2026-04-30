@@ -42,3 +42,10 @@ export default function Home() {
 
           <div className="p-6 border rounded-lg">
             <h3>Maintenance</h3>
+            <p>Keep systems efficient</p>
+          </div>
+        </div>
+      </section>
+
+      {/* CONTACT FORM */}
+      <section id="contact" className="bg-gray-100 py-20 text-center">
