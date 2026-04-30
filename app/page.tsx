@@ -42,31 +42,3 @@ export default function Home() {
 
           <div className="p-6 border rounded-lg">
             <h3>Maintenance</h3>
-            <p>Keep systems efficient</p>
-          </div>
-        </div>
-      </section>
-
-      {/* CONTACT FORM */}
-      <section id="contact" className="bg-gray-100 py-20 text-center">
-        <h2 className="font-bold text-3xl">
-          Get a Free Quote
-        </h2>
-
-        <form
-          className="flex flex-col gap-4 mx-auto mt-8 max-w-md"
-          onSubmit={async (e) => {
-            e.preventDefault();
-
-            const formData = new FormData(e.currentTarget);
-            const data = Object.fromEntries(formData);
-
-            await fetch("/api/leads", {
-              method: "POST",
-              body: JSON.stringify(data),
-            });
-
-            alert("Request submitted!");
-          }}
-        >
-          <input
