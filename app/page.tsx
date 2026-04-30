@@ -13,14 +13,13 @@ export default function Home() {
         </p>
 
         <div className="flex justify-center gap-4 mt-6">
-          
+          <a href="tel:6145887215" className="px-6 py-3 border rounded-lg">
             Call Now
           </a>
 
-          
+          <a href="#contact" className="px-6 py-3 border rounded-lg">
             Get Quote
           </a>
-
         </div>
       </section>
 
@@ -49,18 +48,3 @@ export default function Home() {
       </section>
 
       {/* CONTACT FORM */}
-      <section id="contact" className="bg-gray-100 py-20 text-center">
-        <h2 className="font-bold text-3xl">
-          Get a Free Quote
-        </h2>
-
-        <form
-          className="flex flex-col gap-4 mx-auto mt-8 max-w-md"
-          onSubmit={async (e) => {
-            e.preventDefault();
-
-            const formData = new FormData(e.currentTarget);
-            const data = Object.fromEntries(formData);
-
-
-            
