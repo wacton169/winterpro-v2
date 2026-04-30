@@ -4,9 +4,11 @@ export async function POST(req: Request) {
 
     console.log("NEW LEAD:", data);
 
-    return Response.json({ success: true });
+    return new Response(JSON.stringify({ success: true }), {
+      headers: { "Content-Type": "application/json" },
+      status: 200,
+    });
   } catch (error) {
     return new Response("Error", { status: 500 });
   }
 }
-``
