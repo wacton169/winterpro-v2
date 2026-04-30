@@ -4,7 +4,7 @@ export default function Home() {
 
       {/* HERO */}
       <section className="bg-gray-100 py-20 text-center">
-        <h1 className="font-bold text-4xl">
+        <h1 className="text-4xl font-bold">
           Emergency HVAC Repair in Michigan
         </h1>
 
@@ -12,7 +12,7 @@ export default function Home() {
           Winter Pro HVAC — Same-day service. Licensed professionals. 24/7 emergency availability.
         </p>
 
-        <div className="flex justify-center gap-4 mt-6">
+        <div className="mt-6 flex justify-center gap-4">
           <a href="tel:6145887215" className="px-6 py-3 border rounded-lg">
             Call Now
           </a>
@@ -24,59 +24,15 @@ export default function Home() {
       </section>
 
       {/* SERVICES */}
-      <section className="py-20 text-center">
-        <h2 className="font-bold text-3xl">
-          HVAC Services Across Michigan
-        </h2>
+    
+<section className="py-20 text-center">
+  <h2>...</h2>
 
-        <div className="gap-6 grid md:grid-cols-3 mt-8 px-6">
-          <div className="p-6 border rounded-lg">
-            <h3>HVAC Repair</h3>
-            <p>Fast and reliable repairs</p>
-          </div>
+  <div className="mt-8 grid md:grid-cols-3 gap-6 px-6">
 
-          <div className="p-6 border rounded-lg">
-            <h3>Installation</h3>
-            <p>Professional installs</p>
-          </div>
+    <div>...</div>
+    <div>...</div>
+    <div>...</div>
 
-          <div className="p-6 border rounded-lg">
-            <h3>Maintenance</h3>
-            <p>Keep systems efficient</p>
-          </div>
-        </div>
-      </section>
-
-      {/* CONTACT FORM */}
-      <section id="contact" className="bg-gray-100 py-20 text-center">
-        <h2 className="font-bold text-3xl">
-          Get a Free Quote
-        </h2>
-
-        <form
-          className="flex flex-col gap-4 mx-auto mt-8 max-w-md"
-          onSubmit={async (e) => {
-            e.preventDefault();
-
-            const formData = new FormData(e.currentTarget);
-            const data = Object.fromEntries(formData);
-
-            await fetch("/api/leads", {
-              method: "POST",
-              body: JSON.stringify(data),
-            });
-
-            alert("Request submitted!");
-          }}
-        >
-          <input
-            name="name"
-            placeholder="Your Name"
-            required
-            className="p-3 border rounded"
-          />
-
-          <input
-            name="phone"
-            placeholder="Phone Number"
-            required
+  </div>
+</section>
